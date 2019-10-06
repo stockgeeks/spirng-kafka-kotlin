@@ -9,4 +9,5 @@ class KotlinProducer(private val kafkaTemplate: KafkaTemplate<String, String>) {
   fun send(message: String) {
     kafkaTemplate.send("simple-message-topic", message)
   }
+
 }
