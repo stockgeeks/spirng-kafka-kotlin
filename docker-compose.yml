@@ -22,8 +22,10 @@ services:
 
       ## You need to make sure to specify your hostname in a file in this
       ## same dir as this compose file called `.env`(uncomment the line)
-      ## or to register in your `/etc/hosts` kafka as your loopback interface
+      ## OR to register in your `/etc/hosts` kafka as your loopback interface
       ## address together with hostname and 127.0.0.1
+      ## i.e  - DOCKER_HOST_IP=hostname
+      ## Get hostname value from a terminal command line in your dev machine type: hostname
       KAFKA_ADVERTISED_LISTENERS: >-
         LISTENER_DOCKER_INTERNAL://kafka:19092,
         LISTENER_DOCKER_EXTERNAL://${DOCKER_HOST_IP:-kafka}:9092
