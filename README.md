@@ -7,4 +7,4 @@ examples in the future.
 This project was created for a introductory tutorial of using spring-kafka 
 with Kotlin written here: 
 
-// TODO ADD URL WHEN PUBLISHING POST
+[Post on dev.to](https://dev.to/thegroo/simplest-spring-kafka-producer-and-consumer-kotlin-version-dn8)
